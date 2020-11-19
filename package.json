@@ -1,28 +1,39 @@
 {
   "name": "vsc-json2go",
   "displayName": "vsc-json2go",
-  "description": "",
+  "description": "Create go type representation from json",
   "version": "1.0.0",
+  "publisher": "m-zajac",
+  "repository": "https://github.com/m-zajac/vscode-json2go",
+  "icon": "docs/img/icon.png",
   "engines": {
     "vscode": "^1.51.0"
   },
   "categories": [
+    "Programming Languages",
     "Other"
+  ],
+  "keywords": [
+    "json",
+    "json2go",
+    "jsontogo",
+    "jsontogolang"
   ],
   "activationEvents": [
     "onCommand:vsc-json2go.convertSelection",
-    "onCommand:vsc-json2go.generateSelectionToClipboard"
+    "onCommand:vsc-json2go.generateSelectionToClipboard",
+    "onCommand:vsc-json2go.generateFileToClipboard"
   ],
   "main": "./extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "vsc-json2go.convertSelection",
-        "title": "Json2Go: Convert selected json to go type"
-      },
-      {
         "command": "vsc-json2go.generateSelectionToClipboard",
         "title": "Json2Go: Generate go type from selection to clipboard"
+      },
+      {
+        "command": "vsc-json2go.generateFileToClipboard",
+        "title": "Json2Go: Generate go type from opened file to clipboard"
       }
     ]
   },
@@ -41,8 +52,5 @@
     "mocha": "^8.1.3",
     "typescript": "^4.0.2",
     "vscode-test": "^1.4.0"
-  },
-  "dependencies": {
-    "node-fetch": "^2.6.1"
   }
 }
