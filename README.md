@@ -13,6 +13,10 @@ Original generator code: [https://github.com/m-zajac/json2go](https://github.com
 
 ## Release Notes
 
+### 1.0.1
+
+Update json2go to v1.1.3.
+
 ### 1.0.0
 
-Initial release.
+Initial release using json2go v1.1.2
