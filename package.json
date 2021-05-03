@@ -2,7 +2,7 @@
   "name": "vsc-json2go",
   "displayName": "vsc-json2go",
   "description": "Create go type representation from json",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "m-zajac",
   "repository": "https://github.com/m-zajac/vscode-json2go",
   "icon": "docs/img/icon.png",
